@@ -6,8 +6,8 @@ import PackageDescription
 let package = Package(
     name: "langchain-swift",
     platforms: [
-        .iOS(.v15),
-        .macOS(.v12),
+        .iOS(.v16),
+        .macOS(.v13),
         .watchOS(.v8),
         .visionOS(.v1)
     ],
@@ -19,6 +19,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/buhe/openai-kit", .upToNextMajor(from: "1.8.5")),
+        .package(url: "https://github.com/mfreiwald/SwiftOpenAI", branch: "serverside"),
         .package(url: "https://github.com/supabase-community/supabase-swift", .upToNextMajor(from: "0.2.1")),
         .package(url: "https://github.com/SwiftyJSON/SwiftyJSON", .upToNextMajor(from: "5.0.1")),
         .package(url: "https://github.com/drmohundro/SWXMLHash", .upToNextMajor(from: "7.0.2")),
@@ -36,6 +37,7 @@ let package = Package(
             name: "LangChain",
             dependencies: [
                 .product(name: "OpenAIKit", package: "openai-kit"),
+                .product(name: "SwiftOpenAI", package: "SwiftOpenAI"),
                 .product(name: "Supabase", package: "supabase-swift"),
                 .product(name: "SwiftyJSON", package: "SwiftyJSON"),
                 .product(name: "SWXMLHash", package: "SWXMLHash"),
