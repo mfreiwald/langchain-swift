@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class LLM {
+open class LLM {
     static let LLM_REQ_ID_KEY = "llm_req_id"
     static let LLM_COST_KEY = "cost"
     public init(callbacks: [BaseCallbackHandler] = [], cache: BaseCache? = nil) {

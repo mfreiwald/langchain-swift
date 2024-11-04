@@ -17,7 +17,7 @@ public struct Document: Equatable {
         return lhs.page_content == rhs.page_content
     }
 }
-public class BaseLoader {
+open class BaseLoader {
     
     static let LOADER_TYPE_KEY = "loader_type"
     static let LOADER_REQ_ID = "loader_req_id"

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class BaseRetriever {
+open class BaseRetriever {
     public func _get_relevant_documents(query: String) async throws  -> [Document] {
         []
     }

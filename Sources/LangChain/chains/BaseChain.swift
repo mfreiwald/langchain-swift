@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class DefaultChain {
+open class DefaultChain {
     static let CHAIN_REQ_ID_KEY = "chain_req_id"
     static let CHAIN_COST_KEY = "cost"
     public init(memory: BaseMemory? = nil, outputKey: String, inputKey: String, callbacks: [BaseCallbackHandler] = []) {
